@@ -1,0 +1,3 @@
+1. The bug is a data type error, as in the explore.js file, the code uses `` document.getElementById("num1").value; `` to initiate the variables num1 and num2. Because of the .value, this will make it always return a String. This is why when the function runs calculateSum, it adding the strings, and not the numbers itslef. 
+
+2. This can be fixed by simply converting the string into a integer inside the calculateSum function, by having ``let result = Number(num1) + Number(num2);``
